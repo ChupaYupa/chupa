@@ -1,0 +1,40 @@
+.containt {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    border-radius: 5%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.works {
+    height: 100vh;
+    background-color: rgb(116, 197, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills {
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    border-radius: 2px;
+}
+
+.skill {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.span {
+    background-color: #000000;
+    color: wheat;
+    
+}

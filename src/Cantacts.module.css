@@ -1,0 +1,35 @@
+.cantacts {
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.myCantact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(116, 197, 252);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    width: 50%;
+    border: 1px solid;
+}
+.send {
+    background-color: black;
+    color: white;
+}

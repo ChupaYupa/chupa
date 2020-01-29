@@ -1,0 +1,66 @@
+.works {
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    border-radius: 5%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.myWorks {
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    background-color: rgb(116, 197, 252);
+    align-items: center;
+    display: flex;
+    border-radius: 2px;
+    border-radius: 2px;
+}
+.panel {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.panelOne {
+    height: 100%;
+    justify-content: center;
+    width: 30%;
+    background-color: thistle;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+}
+.step1 {
+    height: 50%;
+}
+.panelTwo {
+    height: 100%;
+    justify-content: center;
+    width: 30%;
+    background-color: thistle;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+}
+.step2 {
+    height: 50%;
+    flex-direction: column;
+}
+.content {
+    background-color: #000000;
+    color: wheat;
+}

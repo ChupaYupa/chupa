@@ -1,0 +1,24 @@
+.header {
+    height: 70px;
+    background-color: rgb(13, 14, 13);
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px wheat;
+}
+.header  a {
+    color: wheat;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.nav {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}

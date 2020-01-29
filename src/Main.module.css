@@ -1,0 +1,32 @@
+.main {
+    height: 100vh;
+    background-color: rgb(241, 247, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.containt {
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap-reverse;
+}
+.span {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.item {
+    display: flex;    
+}
+
+/* @media screen and (max--width : 568px) {
+  .containt {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+  }
+  } */
+  
