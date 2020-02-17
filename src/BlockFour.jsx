@@ -5,11 +5,11 @@ function BlockFour() {
     return (
         <div className={styles.BlockFour}>
             <div className={styles.container}>
-            <div className={styles.FourContainer}>
-                <div className={styles.story}>Distant work</div>
-                <div className={styles.name}>sign on</div>
+                <div className={styles.FourContainer}>
+                    <div className={styles.story}>Distant work</div>
+                    <button className={styles.name}>sign on</button>
+                </div>
             </div>
-        </div>
         </div>
     );
 }

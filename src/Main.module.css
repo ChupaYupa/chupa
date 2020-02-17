@@ -1,32 +1,135 @@
 .main {
-    height: 100vh;
-    background-color: rgb(241, 247, 241);
+    background-image: url('https://www.editionscollectionsdememoire.fr/wp-content/uploads/2014/10/papier-ancien.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap-reverse;
+    padding: 100px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    
+    /* flex-wrap: wrap-reverse; */
 }
+/* h1 {
+    margin: 0 auto;
+} */
 .containt {
     display: flex;
-    
     justify-content: space-around;
-    align-items: stretch;
-    flex-wrap: wrap-reverse;
+    align-items: center;
+    width: 500px;
+    padding-right: 15px;
+    padding-left: 139px;
+    margin-right: 15px;
+    padding: 100px;
+}*, ::after, ::before {
+    box-sizing: border-box;
 }
 .span {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    font-size: 16px;
+}
+.span >span {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+.span h1 span{
+    position: relative;
+    font-size: 50px;
+    padding: 10px 0 10px;
+    z-index: 1;
+}
+.span h1 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    height: 13px;
+    width: 100%;
+    z-index: -1;
+    background: chartreuse;
+}
+/* img {
+   
+    height: auto;
+} */
+.span p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.span h1 span {
+    font-size: 50px;
+    display: inline-block;
 }
 .item {
-    display: flex;    
+   height: 400px;
+   width: 300px;
+   left: 200px;
+   position: relative;
+   z-index: 1;
+}
+.img {
+    height: 400px;
+    width: 300px;
+    background-color: rgb(0, 0, 0);
+    
+    
+}
+.item .img:before{
+    content: "";
+    position: absolute;
+    border: 5px solid chartreuse;
+    height: 393px;
+    width: 329px;
+    left: 10px;
+    top: -28px;
+    width: 329px;
+    z-index: -1;
 }
 
-/* @media screen and (max--width : 568px) {
-  .containt {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-  }
-  } */
-  
+
+
+@media screen and (min-width:801px) and (max-width: 1010px) {
+    .item {
+        left: 50px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .containt {
+    align-items: center;
+    flex-direction: column;
+    }
+    .item {
+        width: 100%;
+        height: auto;
+        top: 100px;
+        left: 1px;
+    }
+}
+@media screen and (max-width:350px) {
+    .img {
+    height: 396px;
+    width: 226px;
+    background-color: rgb(0, 0, 0);
+    }
+    .item {
+            width: 100%;
+    height: auto;
+    top: 100px;
+    left: 1px;
+    }
+    .item .img:before {
+    content: "";
+    position: absolute;
+    border: 5px solid #4e93e6;
+    height: 408px;
+    left: 10px;
+    top: -28px;
+    width: 240px;
+    z-index: -1;
+    }
+}

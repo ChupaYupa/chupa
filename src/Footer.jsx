@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css';
-
+import { git } from '@fortawesome/free-solid-svg-icons'
 function Footer() {
   return (
     <div className={styles.footer}>
