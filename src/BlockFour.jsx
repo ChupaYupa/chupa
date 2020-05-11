@@ -3,11 +3,12 @@ import styles from './BlockFour.module.css';
 
 function BlockFour() {
     return (
-        <div className={styles.BlockFour}>
-            <div className={styles.container}>
+        <div className={styles.Block}>
+            <div className={styles.wrapper}>
                 <div className={styles.FourContainer}>
-                    <div className={styles.story}>Distant work</div>
-                    <button className={styles.name}>sign on</button>
+                    <h2 className={styles.story}>I Am Available For Freelancer</h2>
+                    <div className={styles.line}></div>
+                    <button className={styles.name}>HERE ME</button>
                 </div>
             </div>
         </div>

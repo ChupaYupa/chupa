@@ -42,9 +42,11 @@ function Cantacts() {
   };
 
   return (
-    <div className={styles.cantacts}>
-      <div className={styles.container}>
-        <div className={styles.myCantact}>Contacts</div>
+    <div className={styles.block}>
+      <div className={styles.wrapper}>
+        <h2 className={styles.myCantact}>Contacts</h2>
+        <div className={styles.line}></div>
+
         <form className={styles.form}>
           <input type='text' placeholder="Name" onChange={changeName}></input>
           <input type='text' size='40px' placeholder="Email" onChange={changeEmail}></input>

@@ -1,36 +1,39 @@
 import React from 'react';
 import styles from './Works.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import blog1 from './image/blog1.jpg';
 
 
-
-const myIcon = {
-    width: '200px',
-    height: '50px'
-}
 function Works() {
     return (
-        <div className={styles.works}>
-            <div className={styles.container}>
+        <div className={styles.Block}>
+            <div className={styles.wrapper}>
                 <div className={styles.myWorks}>
-                    <span>My Works</span>
+                    <h2 className={styles.skills}>My Works</h2>
+                    <div className={styles.line}></div>
                 </div>
-                <div className={styles.panel}>
-                    <div className={styles.panelOne}>
-                        <div className={styles.step1}>
-                            <FontAwesomeIcon style={myIcon} icon={faReact} />
-                        </div>
-                        <div className={styles.content}>Description</div>
+                <div className={styles.projects}>
+                <div className={styles.project}>
+                    <div className={styles.projectImg}>
+                        <a className={styles.btnShow} href="">Смотреть</a>
                     </div>
-                    <div className={styles.panelTwo}>
-                        <div className={styles.step2}>
-                            <FontAwesomeIcon style={myIcon} icon={faEnvelope} />
-                        </div>
-                        <div className={styles.content}>Description</div>
-                    </div>
+                    <span className={styles.projectTitle}>10 tips for drawing with coloured pencils</span>
+                    <span className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...</span>
                 </div>
+                <div className={styles.project}>
+                    <div className={styles.projectImg}>
+                        <a className={styles.btnShow} href="">Смотреть</a>
+                    </div>
+                    <span className={styles.projectTitle}>10 tips for drawing with coloured pencils</span>
+                    <span className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...</span>
+                </div>
+                <div className={styles.project}>
+                    <div className={styles.projectImg}>
+                        <a className={styles.btnShow} href="">Смотреть</a>
+                    </div>
+                    <span className={styles.projectTitle}>10 tips for drawing with coloured pencils</span>
+                    <span className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...</span>
+                </div>
+            </div>
             </div>
         </div>
     );
