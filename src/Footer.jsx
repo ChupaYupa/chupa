@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import telegramIcon from './image/telegram.png';
-import socialIcon from './image/facebook.png';
-import githubIcon from './image/github.png';
+import telegramIcon from './image/iconfinder_social-07_3146784.png';
+import socialIcon from './image/vk.png';
+import githubIcon from './image/github (2).png';
+import gmailIcon from './image/gmail.png';
 
 function Footer() {
   return (
@@ -21,7 +22,7 @@ function Footer() {
             </div>
             <div className={styles.socialIcon}>
             <a href="">
-                <img src={githubIcon} alt=""/>
+                <img src={gmailIcon} alt=""/>
             </a>
             </div>
             <div className={styles.socialIcon}>

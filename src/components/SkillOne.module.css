@@ -1,8 +1,8 @@
 .skill {
-    width: 300px;
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding: 20px 0;
 }
 .img {
     display: flex;
@@ -13,12 +13,17 @@
     background-color: #545454;
     transform: rotate(45deg);
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon img {
     transform: rotate(-45deg);
-    width: 85%;
+    width: 50%;
+    height: 50%;
 }
+
 .title {
     text-align: center;
     color: white;
@@ -34,6 +39,7 @@
 .span {
     text-align: center;
     color: white;
+    padding: 0 50px;
 }
 
 @media screen and (max-width: 800px) {

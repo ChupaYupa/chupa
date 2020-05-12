@@ -33,6 +33,13 @@ function Works() {
                     <span className={styles.projectTitle}>10 tips for drawing with coloured pencils</span>
                     <span className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...</span>
                 </div>
+                    <div className={styles.project}>
+                        <div className={styles.projectImg}>
+                            <a className={styles.btnShow} href="">Смотреть</a>
+                        </div>
+                        <span className={styles.projectTitle}>10 tips for drawing with coloured pencils</span>
+                        <span className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...</span>
+                    </div>
             </div>
             </div>
         </div>

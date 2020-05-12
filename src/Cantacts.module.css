@@ -27,7 +27,7 @@
     letter-spacing: 5px;
     font-size: 36px;
     text-transform: capitalize;
-    color: white;
+    color: #060606;
     margin: 0;
 }
 
@@ -36,10 +36,17 @@
     flex-direction: column;
     width: 60%;
     margin: 10px;
+
 }
 .form input, textarea{
     background-color: #f5f0f0ba;
     margin: 2px;
+    border: 2px solid #49f90f;
+}
+input:focus, textarea:focus{
+    background-color: white;
+    margin: 2px;
+    border: none;
 }
 .send {
     background-color: black;
