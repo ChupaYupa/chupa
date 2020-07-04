@@ -1,52 +1,50 @@
 .header {
-    height: 70px;
-    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(15, 15, 15));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 2px 2px 2px 2px rgb(7, 7, 7);
-    position: fixed;
-    width: 100%;
-    padding: 30px 60px;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    transition: .5s ease-in-out;
-    z-index: 2;
+  height: 70px;
+  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(15, 15, 15));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px rgb(7, 7, 7);
+  position: fixed;
+  width: 100%;
+  padding: 30px 60px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s ease-in-out;
+  z-index: 2;
 }
-.header  a {
-    color: wheat;
-    text-decoration: none;
-    text-transform: uppercase;
+.header a {
+  color: wheat;
+  text-decoration: none;
+  text-transform: uppercase;
+  scroll-behavior: smooth;
 }
 .header a:hover {
-    color: rgba(255, 254, 254, 0.473);
+  color: rgba(255, 254, 254, 0.473);
 }
 .container {
-    
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .nav {
-    width: 360px;
-    display: flex;
-    justify-content: space-between;
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
 }
 @media screen and (max-width: 800px) {
-    .container {
-        width: 100%;
-        justify-content: center;
-        
-    }
+  .container {
+    width: 100%;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 600px) {
-    .header {
+  .header {
     display: flex;
     justify-content: center;
     width: 100%;
-   padding: 10px 10px;
-    }
+    padding: 10px 10px;
+  }
 }

@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './Cantacts.module.css';
+import React from "react";
+import styles from "./Cantacts.module.css";
 import axios from "axios";
-
+import Fade from "react-reveal/Fade";
 // let name = (event) => (
 //   event.currentTarget.value
 // );
@@ -12,49 +12,58 @@ import axios from "axios";
 //   event.currentTarget.value
 // );
 
-
-
-debugger
-
-
+debugger;
 
 function Cantacts() {
-  const [name, setName] = React.useState('')
-  const [email, setEmail] = React.useState('')
-  const [message, setMessage] = React.useState('')
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
 
-  let changeName = (event) => (
-    setName(event.currentTarget.value)
-  );
-  let changeEmail = (event) => (
-    setEmail(event.currentTarget.value)
-  );
-  let changeMessage = (event) => (
-    setMessage(event.currentTarget.value)
-  );
+  let changeName = (event) => setName(event.currentTarget.value);
+  let changeEmail = (event) => setEmail(event.currentTarget.value);
+  let changeMessage = (event) => setMessage(event.currentTarget.value);
 
   const form = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3010/submit", {
-      name, email, message
-    })
-      .then(() => { alert('Your message has been send') })
+    axios
+      .post("http://localhost:3010/submit", {
+        name,
+        email,
+        message,
+      })
+      .then(() => {
+        alert("Your message has been send");
+      });
   };
 
   return (
-    <div className={styles.block}>
-      <div className={styles.wrapper}>
-        <h2 className={styles.myCantact}>Contacts</h2>
-        <div className={styles.line}></div>
+    <div className={styles.block} id="Contacts">
+      <Fade bottom>
+        <div className={styles.wrapper}>
+          <h2 className={styles.myCantact}>Contacts</h2>
+          <div className={styles.line}></div>
 
-        <form className={styles.form}>
-          <input type='text' placeholder="Name" onChange={changeName}></input>
-          <input type='text' size='40px' placeholder="Email" onChange={changeEmail}></input>
-          <textarea rows="10" cols="60" onChange={changeMessage} placeholder="Your message"></textarea>
-        </form>
-        <button className={styles.send} onClick={form}>Submit</button>
-      </div>
-    </div >
+          <form className={styles.form}>
+            <input type="text" placeholder="Name" onChange={changeName}></input>
+            <input
+              type="text"
+              size="40px"
+              placeholder="Email"
+              onChange={changeEmail}
+            ></input>
+            <textarea
+              rows="10"
+              cols="60"
+              onChange={changeMessage}
+              placeholder="Your message"
+            ></textarea>
+          </form>
+          <button className={styles.send} onClick={form}>
+            Submit
+          </button>
+        </div>
+      </Fade>
+    </div>
   );
 }
 

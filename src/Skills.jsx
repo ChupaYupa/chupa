@@ -1,30 +1,33 @@
-import React from 'react';
-import styles from './Skills.module.css';
-import SkillOne from './components/SkillOne';
-import reactIcon from "./image/1174949-512.png"
-import jsIcon from "./image/4375378-512.png"
+import React from "react";
+import styles from "./Skills.module.css";
+import SkillOne from "./components/SkillOne";
+import htmlIcon from "./image/Html.png";
 import cssIcon from "./image/css.png";
-
+import jsIcon from "./image/4375378-512.png";
+import reactIcon from "./image/1174949-512.png";
+import reduxIcon from "./image/redux.png";
+import bootstrapIcon from "./image/Boot.png";
+import NodeJSIcon from "./image/Node.png";
+import Fade from "react-reveal/Fade";
 
 function Skills() {
   return (
-    <div className={styles.block}>
-      <div className={styles.wrapper}>
-        <h2 className={styles.skillsTitle}>My Skills</h2>
-        <div className={styles.line}></div>
-        <div className={styles.skill}>
-          <SkillOne title={"JavaScript"}
-                    icon={jsIcon}
-                    discription={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'}/>
-          <SkillOne title={"CSS"}
-                    icon={cssIcon}
-                    discription={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'}/>
-          <SkillOne title={"React"}
-                    icon={reactIcon}
-                    discription={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'}/>
+    <div className={styles.block} id="Skills">
+      <Fade bottom>
+        <div className={styles.wrapper}>
+          <h2 className={styles.skillsTitle}>My Skills</h2>
+          <div className={styles.line}></div>
+          <div className={styles.skill}>
+            <SkillOne title={"HTML"} icon={htmlIcon} />
+            <SkillOne title={"CSS"} icon={cssIcon} />
+            <SkillOne title={"JavaScript"} icon={jsIcon} />
+            <SkillOne title={"React"} icon={reactIcon} />
+            <SkillOne title={"Redux"} icon={reduxIcon} />
+            <SkillOne title={"bootstrap"} icon={bootstrapIcon} />
+            <SkillOne title={"NodeJS"} icon={NodeJSIcon} />
+          </div>
         </div>
-      </div>
-
+      </Fade>
     </div>
   );
 }

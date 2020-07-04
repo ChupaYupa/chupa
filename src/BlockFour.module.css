@@ -1,62 +1,69 @@
 .Block {
-    background-color: rgb(62, 60, 60);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: rgb(62, 60, 60);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 h2 {
-    font-size: 36px;
-    margin: 0 0 30px;
+  font-size: 36px;
+  margin: 0 0 30px;
 }
 .wrapper {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .FourContainer {
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.line{
-    background-color: rgba(127, 255, 0, 0.73);
-    width: 55px;
-    height: 2px;
-    margin: 30px auto;
+.line {
+  background-color: rgba(127, 255, 0, 0.73);
+  width: 55px;
+  height: 2px;
+  margin: 30px auto;
 }
 .story {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-family: "Montserrat", sans-serif;
-    line-height: 1.2;
-    letter-spacing: 5px;
-    font-size: 36px;
-    text-transform: capitalize;
-    color: white;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  font-size: 36px;
+  text-transform: capitalize;
+  color: white;
+  margin: 0;
 }
 .name {
-    background-color: rgb(62, 60, 60);
-    color: white;
-    font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    display: flex;
-    justify-content: flex-end;
+  background-color: rgb(62, 60, 60);
+  color: white;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
 }
-button:not(:disabled) {
-    cursor: pointer;
+button {
+  border: none;
 }
-.name::after {
-    content: "";
-    position: absolute;
-    height: 7px;
-    width: 64px;
-    z-index: 0;
-    background: chartreuse;
+button:hover {
+  background: rgb(0, 0, 0);
+  border-radius: 10%;
+}
+a {
+  text-decoration: none;
+}
+.FourContainer a:hover {
+  background: rgb(0, 0, 0);
+  border-radius: 20%;
+}
+a:not(:disabled) {
+  cursor: pointer;
 }

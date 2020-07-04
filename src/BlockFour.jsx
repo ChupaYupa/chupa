@@ -1,18 +1,25 @@
-import React from 'react';
-import styles from './BlockFour.module.css';
-
+import React from "react";
+import styles from "./BlockFour.module.css";
+import Fade from "react-reveal/Fade";
 function BlockFour() {
-    return (
-        <div className={styles.Block}>
-            <div className={styles.wrapper}>
-                <div className={styles.FourContainer}>
-                    <h2 className={styles.story}>I Am Available For Freelancer</h2>
-                    <div className={styles.line}></div>
-                    <button className={styles.name}>HERE ME</button>
-                </div>
-            </div>
+  return (
+    <div className={styles.Block}>
+      <Fade bottom>
+        <div className={styles.wrapper}>
+          <div className={styles.FourContainer}>
+            <h2 className={styles.story}>I Am Available For Freelancer</h2>
+            <div className={styles.line}></div>
+            <a
+              href="https://wa.me/89811583126?text=Вакансия"
+              className={styles.name}
+            >
+              WhatsApp
+            </a>
+          </div>
         </div>
-    );
+      </Fade>
+    </div>
+  );
 }
 
 export default BlockFour;
