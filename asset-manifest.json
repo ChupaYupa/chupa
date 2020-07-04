@@ -1,29 +1,32 @@
 {
   "files": {
-    "main.css": "/chupa/static/css/main.7f713fd4.chunk.css",
-    "main.js": "/chupa/static/js/main.196f454f.chunk.js",
-    "main.js.map": "/chupa/static/js/main.196f454f.chunk.js.map",
+    "main.css": "/chupa/static/css/main.969d16e8.chunk.css",
+    "main.js": "/chupa/static/js/main.6d32cea0.chunk.js",
+    "main.js.map": "/chupa/static/js/main.6d32cea0.chunk.js.map",
     "runtime-main.js": "/chupa/static/js/runtime-main.481f93b7.js",
     "runtime-main.js.map": "/chupa/static/js/runtime-main.481f93b7.js.map",
-    "static/js/2.941f4b0a.chunk.js": "/chupa/static/js/2.941f4b0a.chunk.js",
-    "static/js/2.941f4b0a.chunk.js.map": "/chupa/static/js/2.941f4b0a.chunk.js.map",
+    "static/js/2.7a4a2728.chunk.js": "/chupa/static/js/2.7a4a2728.chunk.js",
+    "static/js/2.7a4a2728.chunk.js.map": "/chupa/static/js/2.7a4a2728.chunk.js.map",
     "index.html": "/chupa/index.html",
-    "precache-manifest.5bfb747d332b20f99c3cfbc407955f31.js": "/chupa/precache-manifest.5bfb747d332b20f99c3cfbc407955f31.js",
+    "precache-manifest.6814e48801e320b5e8e7edb8bddcf912.js": "/chupa/precache-manifest.6814e48801e320b5e8e7edb8bddcf912.js",
     "service-worker.js": "/chupa/service-worker.js",
-    "static/css/main.7f713fd4.chunk.css.map": "/chupa/static/css/main.7f713fd4.chunk.css.map",
-    "static/js/2.941f4b0a.chunk.js.LICENSE": "/chupa/static/js/2.941f4b0a.chunk.js.LICENSE",
+    "static/css/main.969d16e8.chunk.css.map": "/chupa/static/css/main.969d16e8.chunk.css.map",
+    "static/js/2.7a4a2728.chunk.js.LICENSE": "/chupa/static/js/2.7a4a2728.chunk.js.LICENSE",
     "static/media/1174949-512.png": "/chupa/static/media/1174949-512.1bd59c02.png",
     "static/media/4375378-512.png": "/chupa/static/media/4375378-512.d95b03c3.png",
-    "static/media/blog1.jpg": "/chupa/static/media/blog1.ddfa0d28.jpg",
+    "static/media/Boot.png": "/chupa/static/media/Boot.71630ed5.png",
+    "static/media/Node.png": "/chupa/static/media/Node.e8e4e646.png",
+    "static/media/Works.module.css": "/chupa/static/media/blog1.ddfa0d28.jpg",
     "static/media/github (2).png": "/chupa/static/media/github (2).dc967186.png",
     "static/media/gmail.png": "/chupa/static/media/gmail.2c1a7560.png",
     "static/media/iconfinder_social-07_3146784.png": "/chupa/static/media/iconfinder_social-07_3146784.473b9e3e.png",
+    "static/media/redux.png": "/chupa/static/media/redux.545417a2.png",
     "static/media/vk.png": "/chupa/static/media/vk.05b02231.png"
   },
   "entrypoints": [
     "static/js/runtime-main.481f93b7.js",
-    "static/js/2.941f4b0a.chunk.js",
-    "static/css/main.7f713fd4.chunk.css",
-    "static/js/main.196f454f.chunk.js"
+    "static/js/2.7a4a2728.chunk.js",
+    "static/css/main.969d16e8.chunk.css",
+    "static/js/main.6d32cea0.chunk.js"
   ]
 }
