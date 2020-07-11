@@ -3,16 +3,18 @@ import styles from "./Main.module.css";
 
 function Main() {
   return (
-    <div className={styles.block} id="Main">
+    <div className={styles.block}  id="Main">
       <div className={styles.wrapper}>
         <div className={styles.span}>
-          <span>Hello!</span>
+          <span>Здравствуй гость!</span>
           <h1>
-            I am <span>front-end developer</span>
+            Я<span> React-разработчик</span>
           </h1>
 
           <p>
-            <span>My name is Tamara Makarycheva</span>
+            <span>Меня зовут Тамара, я занимаюсь React-разработкой год.
+            Использую стек технологий React + Redux. Переодически практикую и нативный JS.Также вертку и использование flexbox, bootstrap 4 и других современных технологий.
+            Люблю изучать новое и развиваться в своей профессии</span>
           </p>
         </div>
         <div className={styles.item}></div>

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Skills.module.css";
 import SkillOne from "./components/SkillOne";
 import htmlIcon from "./image/Html.png";
-import cssIcon from "./image/css.png";
+import cssIcon from "./image/csss.png";
 import jsIcon from "./image/4375378-512.png";
 import reactIcon from "./image/1174949-512.png";
 import reduxIcon from "./image/redux.png";
@@ -15,7 +15,7 @@ function Skills() {
     <div className={styles.block} id="Skills">
       <Fade bottom>
         <div className={styles.wrapper}>
-          <h2 className={styles.skillsTitle}>My Skills</h2>
+          <h2 className={styles.skillsTitle}>Мои навыки</h2>
           <div className={styles.line}></div>
           <div className={styles.skill}>
             <SkillOne title={"HTML"} icon={htmlIcon} />

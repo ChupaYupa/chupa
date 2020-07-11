@@ -7,7 +7,7 @@ function BlockFour() {
       <Fade bottom>
         <div className={styles.wrapper}>
           <div className={styles.FourContainer}>
-            <h2 className={styles.story}>I Am Available For Freelancer</h2>
+            <h2 className={styles.story}>Ищу удаленную форму работы </h2>
             <div className={styles.line}></div>
             <a
               href="https://wa.me/89811583126?text=Вакансия"

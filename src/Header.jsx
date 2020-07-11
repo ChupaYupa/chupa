@@ -1,23 +1,24 @@
 import React from "react";
 import styles from "./header.module.css";
 
+import { Link, animateScroll as scroll } from "react-scroll";
 function Header() {
   return (
     <div className={styles.header}>
       <div className={styles.container}>
         <div className={styles.nav}>
-          <a href="#Main" className="link">
-            Main
-          </a>
-          <a href="#Skills" className="link">
-            Skills
-          </a>
-          <a href="#projects" className="link">
-            Projects
-          </a>
-          <a href="#Contacts" className="link">
-            Contacts
-          </a>
+          <Link to="Main" activeClass={styles.active} spy={true} smooth={true} duration={500}>
+            Меню
+          </Link>
+          <Link to="Skills" activeClass={styles.active} spy={true} smooth={true} duration={500}>
+            Навыки
+          </Link>
+          <Link to="projects" activeClass={styles.active} spy={true} smooth={true} duration={500}>
+            Проекты
+          </Link>
+        <Link to="Contacts" activeClass={styles.active} spy={true} smooth={true} duration={500}>
+            Контакт
+         </Link>
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: 2px 2px 2px 2px rgb(7, 7, 7);
+  color: white;
   position: fixed;
   width: 100%;
   padding: 30px 60px;
@@ -15,13 +16,13 @@
   transition: 0.5s ease-in-out;
   z-index: 2;
 }
-.header a {
-  color: wheat;
-  text-decoration: none;
-  text-transform: uppercase;
-  scroll-behavior: smooth;
-}
-.header a:hover {
+/*.header  {*/
+/*  color: wheat;*/
+/*  text-decoration: none;*/
+/*  text-transform: uppercase;*/
+/*  scroll-behavior: smooth;*/
+/*}*/
+.header Link:hover {
   color: rgba(255, 254, 254, 0.473);
 }
 .container {
@@ -33,6 +34,9 @@
   width: 360px;
   display: flex;
   justify-content: space-between;
+}
+.active {
+  color: rgba(255, 254, 254, 0.473);
 }
 @media screen and (max-width: 800px) {
   .container {

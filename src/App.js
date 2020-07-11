@@ -9,6 +9,8 @@ import Cantacts from "./Cantacts";
 import Footer from "./Footer";
 import Particles from "react-particles-js";
 
+
+
 const particOpt = {
   particles: {
     number: {
@@ -126,19 +128,36 @@ const particOpt = {
   retina_detect: true,
 };
 
-function App() {
-  return (
-    <div className="App">
-      <Particles className="particles" params={particOpt} />
-      <Header />
-      <Main />
-      <Skills />
-      <Works />
-      <BlockFour />
-      <Cantacts />
-      <Footer />
-    </div>
-  );
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state  = [
+      {id: 1, nameWork: "Social Network", skill: "React + Redux, REST API, SPA", link:"https://github.com/ChupaYupa/New"},
+      {id: 2, nameWork: "Dog Game", skill: "React + Redux, отработка алгоритмов",link:"https://github.com/ChupaYupa/DogGame"},
+      {id: 3, nameWork: "Super counter", skill: "Уовершенственный счетчик на React Redux",link:"https://github.com/ChupaYupa/Counter"},
+      {id: 3, nameWork: "React Todolist", skill: "Знаменитый todolist на React с логинизацией",link:"https://github.com/ChupaYupa/TodoList"}
+    ]
+  }
+
+
+  render() {
+
+    return (
+        <div className="App">
+          <Particles className="particles" params={particOpt}/>
+          <Header/>
+           <Main/>
+          <Skills/>
+          <Works state={this.state}
+              id={this.state.id}
+          />
+          <BlockFour/>
+          <Cantacts/>
+          <Footer/>
+        </div>
+    );
+  }
 }
 
 export default App;
