@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Main.module.css";
+import Avatar from "./image/Avatar2.jpg"
 
 function Main() {
   return (
@@ -13,11 +14,11 @@ function Main() {
 
           <p>
             <span>Меня зовут Тамара, я занимаюсь React-разработкой год.
-            Использую стек технологий React + Redux. Переодически практикую и нативный JS.Также вертку и использование flexbox, bootstrap 4 и других современных технологий.
-            Люблю изучать новое и развиваться в своей профессии</span>
+            Использую стек технологий React + Redux. Переодически практикую и нативный JS.Также вертку, использование flexbox, bootstrap 4 и других современных технологий.
+            Люблю изучать новое, развиваться в своей профессии</span>
           </p>
         </div>
-        <div className={styles.item}></div>
+        <div className={styles.item}><img src={Avatar}/></div>
       </div>
     </div>
   );

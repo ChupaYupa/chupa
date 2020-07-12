@@ -8,7 +8,7 @@ function Header() {
       <div className={styles.container}>
         <div className={styles.nav}>
           <Link to="Main" activeClass={styles.active} spy={true} smooth={true} duration={500}>
-            Меню
+            Главное
           </Link>
           <Link to="Skills" activeClass={styles.active} spy={true} smooth={true} duration={500}>
             Навыки
