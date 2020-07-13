@@ -14,15 +14,12 @@ function Cantacts() {
     let changeMessage = (event) => setMessage(event.currentTarget.value);
 
     const form = (e) => {
-
         e.preventDefault();
-        debugger
-        axios.post("http://localhost:3010/submit", {
-
-                name,
-                email,
-                message,
-            })
+        axios.post("https://express-js2.herokuapp.com/submit", {
+            name,
+            email,
+            message,
+        })
             .then(() => {
                 alert("Your message has been send");
             });
