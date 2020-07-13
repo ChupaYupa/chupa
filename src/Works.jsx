@@ -14,60 +14,6 @@ function Works(props) {
             <div className={styles.line}></div>
           </div>
           <div className={styles.projects}>
-            {/*<div className={styles.project}>*/}
-            {/*  <div className={styles.projectImg}>*/}
-            {/*    <a className={styles.btnShow} href="">*/}
-            {/*      Смотреть*/}
-            {/*    </a>*/}
-            {/*  </div>*/}
-            {/*  <span className={styles.projectTitle}>*/}
-            {/*    <a href="https://github.com/ChupaYupa/New">Social Network</a></span>*/}
-            {/*  <span className={styles.description}>*/}
-            {/*    React + Redux, REST API, SPA*/}
-            {/*  </span>*/}
-            {/*</div>*/}
-            {/*<div className={styles.project}>*/}
-            {/*  <div className={styles.projectImg}>*/}
-            {/*    <a className={styles.btnShow} href="">*/}
-            {/*      Смотреть*/}
-            {/*    </a>*/}
-            {/*  </div>*/}
-            {/*  <span className={styles.projectTitle}>*/}
-            {/*    <a href="https://github.com/ChupaYupa/DogGame">Dog Game</a>*/}
-            {/*    </span>*/}
-            {/*  <span className={styles.description}>*/}
-            {/*    GIT: https://github.com/ChupaYupa/TodoList*/}
-            {/*    React + Redux, отработка алгоритмов*/}
-            {/*  </span>*/}
-            {/*</div>*/}
-            {/*<div className={styles.project}>*/}
-            {/*  <div className={styles.projectImg}>*/}
-            {/*    <a className={styles.btnShow} href="">*/}
-            {/*      Смотреть*/}
-            {/*    </a>*/}
-            {/*  </div>*/}
-            {/*  <span className={styles.projectTitle}>*/}
-            {/*    <a href="https://github.com/ChupaYupa/Counter">Super counter</a>*/}
-            {/*    </span>*/}
-            {/*  <span className={styles.description}>*/}
-            {/*    GIT: https://github.com/ChupaYupa/TodoList*/}
-            {/*    Уовершенственный счетчик на React Redux*/}
-            {/*  </span>*/}
-            {/*</div>*/}
-            {/*<div className={styles.project}>*/}
-            {/*  <div className={styles.projectImg}>*/}
-            {/*    <a className={styles.btnShow} href="">*/}
-            {/*      Смотреть*/}
-            {/*    </a>*/}
-            {/*  </div>*/}
-            {/*  <span className={styles.projectTitle}>*/}
-            {/*    <a href="https://github.com/ChupaYupa/TodoList">React Todolist</a>*/}
-            {/*  </span>*/}
-            {/*  <span className={styles.description}>*/}
-            {/*    Знаменитый todolist на React с логинизацией*/}
-            {/*  </span>*/}
-            {/*</div>*/}
-
             {
               props.state.map(
                   u => <Work state={u}
