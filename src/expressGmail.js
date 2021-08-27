@@ -17,8 +17,8 @@ app1.use(cors({
 let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-        user: "docsperj@gmail.com", // generated ethereal user
-        pass: "Ayrxhs8e" // generated ethereal password
+        user: process.env.login, // generated ethereal user
+        pass: process.env.password // generated ethereal password
     }
 });
 
@@ -52,7 +52,8 @@ app1.post('/submit', async function (req, res) {
 
     res.send('Submited!');
 });
+const PORT = 'https://express-js2.herokuapp.com/'
 
-app1.listen(3001, function () {
+app1.listen(PORT, function () {
     console.log('Example app listening on port http://localhost:3001!');
 });

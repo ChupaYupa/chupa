@@ -33,7 +33,7 @@ function Cantacts() {
                     <div className={styles.line}></div>
 
                     <form className={styles.form}>
-                        <input type="text" placeholder="Name" onChange={changeName}/>
+                        <input type="text" placeholder="Name" onChange={changeName} />
                         <input
                             type="text"
                             size="40px"
