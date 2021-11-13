@@ -1,20 +1,19 @@
 {
   "files": {
     "main.css": "/chupa/static/css/main.e2995544.chunk.css",
-    "main.js": "/chupa/static/js/main.8f5ea5c2.chunk.js",
-    "main.js.map": "/chupa/static/js/main.8f5ea5c2.chunk.js.map",
-    "runtime-main.js": "/chupa/static/js/runtime-main.9e928ef4.js",
-    "runtime-main.js.map": "/chupa/static/js/runtime-main.9e928ef4.js.map",
-    "static/js/2.ef0e166d.chunk.js": "/chupa/static/js/2.ef0e166d.chunk.js",
-    "static/js/2.ef0e166d.chunk.js.map": "/chupa/static/js/2.ef0e166d.chunk.js.map",
+    "main.js": "/chupa/static/js/main.c7c5c11a.chunk.js",
+    "main.js.map": "/chupa/static/js/main.c7c5c11a.chunk.js.map",
+    "runtime-main.js": "/chupa/static/js/runtime-main.481f93b7.js",
+    "runtime-main.js.map": "/chupa/static/js/runtime-main.481f93b7.js.map",
+    "static/js/2.d643951f.chunk.js": "/chupa/static/js/2.d643951f.chunk.js",
+    "static/js/2.d643951f.chunk.js.map": "/chupa/static/js/2.d643951f.chunk.js.map",
     "index.html": "/chupa/index.html",
-    "precache-manifest.8552cf1ed467f3d804d67d4755befd51.js": "/chupa/precache-manifest.8552cf1ed467f3d804d67d4755befd51.js",
+    "precache-manifest.bd43982aa8bdfe198c9615220b4e8300.js": "/chupa/precache-manifest.bd43982aa8bdfe198c9615220b4e8300.js",
     "service-worker.js": "/chupa/service-worker.js",
     "static/css/main.e2995544.chunk.css.map": "/chupa/static/css/main.e2995544.chunk.css.map",
-    "static/js/2.ef0e166d.chunk.js.LICENSE": "/chupa/static/js/2.ef0e166d.chunk.js.LICENSE",
+    "static/js/2.d643951f.chunk.js.LICENSE": "/chupa/static/js/2.d643951f.chunk.js.LICENSE",
     "static/media/1174949-512.png": "/chupa/static/media/1174949-512.1bd59c02.png",
     "static/media/4375378-512.png": "/chupa/static/media/4375378-512.d95b03c3.png",
-    "static/media/Avatar2.jpg": "/chupa/static/media/Avatar2.ab753557.jpg",
     "static/media/Boot.png": "/chupa/static/media/Boot.71630ed5.png",
     "static/media/Node.png": "/chupa/static/media/Node.e8e4e646.png",
     "static/media/Works.module.css": "/chupa/static/media/blog1.ddfa0d28.jpg",
@@ -26,9 +25,9 @@
     "static/media/vk.png": "/chupa/static/media/vk.05b02231.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9e928ef4.js",
-    "static/js/2.ef0e166d.chunk.js",
+    "static/js/runtime-main.481f93b7.js",
+    "static/js/2.d643951f.chunk.js",
     "static/css/main.e2995544.chunk.css",
-    "static/js/main.8f5ea5c2.chunk.js"
+    "static/js/main.c7c5c11a.chunk.js"
   ]
 }
