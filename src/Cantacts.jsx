@@ -1,28 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Cantacts.module.css";
 import axios from "axios";
 import Fade from "react-reveal/Fade";
-
+import emailjs from 'emailjs-com'
+import { logDOM } from "@testing-library/react";
 
 function Cantacts() {
-    const [name, setName] = React.useState("");
-    const [email, setEmail] = React.useState("");
-    const [message, setMessage] = React.useState("");
+    const [info, setInfo] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
 
-    let changeName = (event) => setName(event.currentTarget.value);
-    let changeEmail = (event) => setEmail(event.currentTarget.value);
-    let changeMessage = (event) => setMessage(event.currentTarget.value);
-
-    const form = (e) => {
-        e.preventDefault();
-        axios.post("https://express-js2.herokuapp.com/submit", {
-            name,
-            email,
-            message,
-        })
-            .then(() => {
-                alert("Your message has been send");
-            });
+    const onHandleChange = (e) => {
+        setInfo({ ...info, [e.target.name]: e.target.value })
+    }
+    const sendEmail = (e) => {
+        e.preventDefault()
+        emailjs.sendForm('service_xz758is', 'template_08gorll', e.target, 'user_2DTXt2HVfemkl62ZUVU3T')
+            .then(res => console.log(res))
+            .catch(err => console.log(err))
     };
 
     return (
@@ -32,24 +29,27 @@ function Cantacts() {
                     <h2 className={styles.myCantact}>Напишите мне</h2>
                     <div className={styles.line}></div>
 
-                    <form className={styles.form}>
-                        <input type="text" placeholder="Name" onChange={changeName} />
+                    <form className={styles.form} onSubmit={sendEmail}>
+                        <input type="text" placeholder="Name" name={'name'} onChange={onHandleChange} />
                         <input
                             type="text"
                             size="40px"
                             placeholder="Email"
-                            onChange={changeEmail}
+                            onChange={onHandleChange}
+                            name={'email'}
                         />
                         <textarea
                             rows="10"
                             cols="60"
-                            onChange={changeMessage}
+                            onChange={onHandleChange}
                             placeholder="Your message"
+                            name={'message'}
                         />
+
+                        <button className={styles.send}>
+                            Отправить
+                        </button>
                     </form>
-                    <button className={styles.send} onClick={form}>
-                        Отправить
-                    </button>
                 </div>
             </Fade>
         </div>
